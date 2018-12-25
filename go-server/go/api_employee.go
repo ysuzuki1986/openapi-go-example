@@ -23,7 +23,7 @@ func GetEmployee(w http.ResponseWriter, r *http.Request) {
 
   employee := Employee{
     Id:        employeeID[0],
-    FirstName: "ryuichi " + employeeID[0],
+    FirstName: "testuser-" + employeeID[0],
     LastName:  "daigo " + employeeID[0],
     Salary:    12000000}
   json.NewEncoder(w).Encode(employee)
